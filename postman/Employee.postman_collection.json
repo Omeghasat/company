@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "9a0c1521-c6fc-4a19-bbc2-593027e51312",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25223199"
+	},
+	"item": [
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"empname\": \"Max\",\n        \"empdesignation\": \"Manager\",\n        \"empdepartment\": \"Hr\",\n        \"empid\": 123",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2023/company/employee/add",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"company",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
